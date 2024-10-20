@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Internal</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+       body {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.5)), url("image.jpg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #fff;  
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6); 
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(45, 43, 43, 0.2);
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #FFD700; 
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem; 
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .typing-text {
+            color: #D1E8E4;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem; 
+            line-height: 1.6;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .btn-learn {
+            display: inline-block;
+            padding: 12px 25px; 
+            background-color: #FFD700;
+            color: #333;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 25px;
+            margin-top: 20px; 
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-learn:hover {
+            background-color: #ffcb33;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(255, 203, 51, 0.5); 
+        }
+
+        .typed-cursor {
+            font-size: 1.5rem;
+            color: #FFD700; 
+            font-weight: bold;
+            animation: blinkCursor 0.8s infinite;
+        }
+
+        @keyframes blinkCursor {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 2rem; 
+            }
+
+            .typing-text {
+                font-size: 1rem; 
+            }
+
+            .btn-learn {
+                padding: 10px 20px; 
+                font-size: 0.9rem; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h2>Penerapan CSS Internal</h2>
+        <span id="typed-text" class="typing-text"></span> 
+        
+        <div style="margin-top: 30px;"> 
+            <a href="index.html" class="btn-learn">Kembali</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed-text', {
+            strings: [
+                'Dengan cara internal CSS, penulisan source code CSS diletakkan di bagian tag head di dalam tag style.',
+                'CSS internal lebih efisien jika hanya diterapkan pada satu halaman saja.',
+                'Efek typing ini dibuat menggunakan Typed.js'
+            ],
+            typeSpeed: 50,  
+            backSpeed: 30,  
+            startDelay: 1000,  
+            backDelay: 1500,  
+            loop: true,  
+            showCursor: true, 
+            cursorChar: '|',  
+        });
+    </script>
+</body>
+</html>
