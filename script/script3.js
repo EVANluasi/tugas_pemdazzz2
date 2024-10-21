@@ -10,7 +10,7 @@ const cardData = [
     hueB: 40
   },
   {
-    text: "📗 Anda dapat menghubungkan beberapa file HTML ke satu file CSS.",
+    text: "📗 Disini kita dapat menghubungkan beberapa file HTML ke satu file CSS.",
     hueA: 60,
     hueB: 90
   },
