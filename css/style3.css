@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Plaster', sans-serif;
+    font-family: "Plaster", sans-serif;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
 }
@@ -24,7 +24,7 @@ html, body {
     --background: var(--purple);
     --accent: var(--white);
 
-    font-family: 'Plaster', sans-serif;
+    font-family: 'Bebas Neue', 'Anton', sans-serif;
     background-color: var(--background);
     line-height: 1.6;
     color: var(--accent);
@@ -74,39 +74,39 @@ section {
 
 .scroller {
     display: flex;
-    gap: 20px; 
+    gap: 30px;
     white-space: nowrap;
     font-size: 64px;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: -1px; 
+    letter-spacing: -2px;
     line-height: 0.8;
 }
 
 .scroller span {
     display: block;
-    color: #8b7fc1; 
-    margin-right: 20px; 
+    color: var(--accent);
+    margin-right: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h1, h2 {
-    font-family: 'Plaster', sans-serif;
+    font-family: 'Bebas Neue', 'Anton', sans-serif; /* Perbarui font untuk konsistensi */
     font-weight: 600;
-    color: #00ff00;
+    color: var(--accent);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     font-size: 56px;
-    letter-spacing: -2px; 
+    letter-spacing: -3px;
     text-align: center;
     margin: 100px 0 40px;
 }
 
 h2 {
     font-size: 36px;
-    letter-spacing: -1px; 
+    letter-spacing: -1px;
     margin: 50px 0 10px;
     color: var(--yellow);
 }
@@ -114,7 +114,7 @@ h2 {
 p {
     font-size: 18px;
     margin: 15px 0;
-    color: #ffffff; 
+    color: var(--accent);
     text-align: center;
 }
 
@@ -135,12 +135,13 @@ button:hover {
     color: var(--ash-black);
 }
 
+/* Gaya untuk tombol "Kembali" */
 .kembali-button {
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
     color: var(--white);
-    background-color: var(--teal-600); 
+    background-color: var(--teal-600); /* Warna yang sesuai */
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -148,7 +149,7 @@ button:hover {
 }
 
 .kembali-button:hover {
-    background-color: var(--teal-700); 
+    background-color: var(--teal-700); /* Warna hover */
 }
 
 .grid-container {
